@@ -5,8 +5,14 @@
 }
 
 body {
-    padding: 2em 3em;
+    margin: 0 auto;
     font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+    max-width: 1200px;
+    width: 100%;
+}
+
+#mainarea {
+    margin: 2em;
 }
 
 #h-h1 {

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,36 +9,66 @@
 }
 
 body {
+    background: #fdfdfd;
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
     margin: 0 auto;
-    font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
-    max-width: 1200px;
+    max-width: 1140px;
     width: 100%;
+    padding: 2em 0;
 }
 
-#mainarea {
-    margin: 2em;
-}
+#uk {
+    h1, h2, h3, h4, h5, p, a, ul, li {
+        font-family: "Source Code Pro", "BIZ UDGothic", sans-serif;
+        padding: .3em 0;
+    }
 
-#h-h1 {
-    padding: .5em;
-    font-size: 32px;
-}
+    p, li {
+            color: #555;
+    }
 
-#ul1 {
-    padding-left: 3em;
-}
+    header {
+        h1 {
+            border-bottom: 2px solid #ffc4dc;
+            font-weight: 500;
+            font-size: 32px;
+            margin-bottom: .3em;
+        }
+    }
 
-.ul2 {
-    padding-left: 1em;
-    padding-top: .2em;
-}
+    main {
+        .h2 {
+            font-weight: 500;
+            font-size: 26px;
+        }
+    
+        .h3 {
+            font-weight: 500;
+            font-size: 22px;
+        }
+    
+        ul {
+            padding-left: 1em;
+            margin: 0;
+        }
+    
+        ul > li {
+            font-size: 16px;
+            padding: .2em .8em;
+        }
+    }
 
-li {
-    padding: .15em 0;
-}
+    footer {
+        border-top: 1px solid #f2f2f2;
+        margin: 2em 0;
+        padding: 1em;
+        text-align: right;
 
-footer {
-    margin: 2em 0;
-    padding: 2em;
-    text-align: right;
+        p {
+            margin: 0;
+            padding: .2em;
+        }
+    }
 }

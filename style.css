@@ -22,31 +22,34 @@ body {
 #uk {
     h1, h2, h3, h4, h5, p, a, ul, li {
         font-family: "Source Code Pro", "BIZ UDGothic", sans-serif;
-        padding: .3em 0;
+        padding: .5em 0 .1em;
     }
 
     p, li {
-            color: #555;
+            color: #665;
     }
 
     header {
         h1 {
-            border-bottom: 2px solid #ffc4dc;
-            font-weight: 500;
+            border-bottom: 2px solid #ffbcd7;
+            border-left: 6px solid #ffbcd7;
+            font-weight: 400;
             font-size: 32px;
             margin-bottom: .3em;
+            padding-left: .3em;
+            padding-top: 0;
         }
     }
 
     main {
         .h2 {
             font-weight: 500;
-            font-size: 26px;
+            font-size: 1.35em;
         }
     
         .h3 {
             font-weight: 500;
-            font-size: 22px;
+            font-size: 1.125em;
         }
     
         ul {
@@ -55,8 +58,14 @@ body {
         }
     
         ul > li {
-            font-size: 16px;
+            font-size: 1em;
             padding: .2em .8em;
+        }
+
+        .attention {
+            border-bottom: 1px solid #333;
+            color: #445;
+            display: inline-block;
         }
     }
 
@@ -67,6 +76,7 @@ body {
         text-align: right;
 
         p {
+            font-size: 14px;
             margin: 0;
             padding: .2em;
         }

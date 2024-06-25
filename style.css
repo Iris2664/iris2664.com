@@ -15,18 +15,24 @@ body {
     font-style: normal;
     margin: 0 auto;
     max-width: 1140px;
-    width: 100%;
+    width: auto;
     padding: 2em 0;
 }
 
 #uk {
+    margin-top: 2.5em;
+    padding: 0 3em;
+
     h1, h2, h3, h4, h5, p, a, ul, li {
         font-family: "Source Code Pro", "BIZ UDGothic", sans-serif;
-        padding: .5em 0 .1em;
+    }
+
+    h1, h2, h3, h4, h5 {
+        padding: .6em 0 .1em;
     }
 
     p, li {
-            color: #556;
+            color: #46494e;
     }
 
     header {
@@ -71,10 +77,14 @@ body {
         a {
             color: #9b5b63;
         }
+
+        p {
+            padding: .3em 0;
+        }
     
         ul {
             padding-left: 1em;
-            margin: 0;
+            margin: .3em 0;
         }
     
         ul > li {
@@ -87,10 +97,36 @@ body {
             color: #445;
             display: inline-block;
         }
+
+        #About_box {
+            display: flex;
+            padding: 0 3em;
+            margin: 2em 0;
+
+            h1, h2, h3, h4 {
+                margin: 0;
+                padding: .3em 0;
+            }
+
+            #About_box_left {
+                flex-basis: 20%;
+                padding: 0;
+                margin-right: 5em;
+                text-align: center;
+            }
+
+            #About_box_right {
+                padding: 0 2em;
+                
+                p {
+                    font-size: .875em;
+                }
+            }
+        }
     }
 
     footer {
-        border-top: 1px solid #f2f2f2;
+        border-top: 1px solid #d8d8d8;
         margin: 2em 0;
         padding: 1em;
         text-align: right;
@@ -100,9 +136,31 @@ body {
         }
 
         p {
+            color: #777;
             font-size: 14px;
             margin: 0;
             padding: .2em;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #uk {
+        main {
+            #About_box {
+                display: block;
+                margin: 0;
+                padding: 0;
+
+                #About_box_left {
+                    padding: 2em 0;
+                    margin: 0;
+                }
+    
+                #About_box_right {
+                    padding: 0;
+                }
+            }    
         }
     }
 }

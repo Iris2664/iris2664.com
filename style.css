@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,20 +8,33 @@
 }
 
 body {
-    background: #fdfdfd;
+    background-color: #fdfdfd;
     color: #333;
     font-size: 16px;
     font-style: normal;
-    margin: 0 auto;
-    max-width: 1140px;
-    width: auto;
-    padding: 2em 0;
+}
+
+.bk {
+    background-color: #fff0f8;
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% calc(100% - 10vh),
+        0 100%
+    );
+    z-index: -1;
 }
 
 #uk {
-    padding: 0 3.5em;
+    margin: 0 auto;
+    padding: 1em 5em;
+    max-width: 1140px;
+    width: auto;
 
-    h1, h2, h3, h4, h5, p, a, ul, li {
+    * {
         font-family: "Source Code Pro", "BIZ UDGothic", sans-serif;
     }
 
@@ -70,7 +84,12 @@ body {
     
         .h3 {
             font-weight: 500;
-            font-size: 1.125em;
+            font-size: 1.2em;
+        }
+
+        .h4 {
+            font-weight: 500;
+            font-size: 1.05em;
         }
 
         a {
@@ -100,7 +119,7 @@ body {
         #About_box {
             display: flex;
             padding: 0 3em;
-            margin: 2em 0;
+            margin: 1.2em 0 1.5em;
 
             h1, h2, h3, h4 {
                 margin: 0;
@@ -131,6 +150,7 @@ body {
 
                 h4 {
                     font-size: 1.125em;
+                    font-weight: 700;
                     margin-bottom: .2em;
                 }
                 
@@ -144,6 +164,16 @@ body {
 
         .links_p {
             font-size: .85em;
+        }
+
+        .email {
+            background-color: #f8efef;
+            padding: .5em;
+            width: fit-content;
+
+            p {
+                color: #9b0e0e;
+            }
         }
     }
 
@@ -168,6 +198,8 @@ body {
 
 @media (max-width: 768px) {
     #uk {
+        padding: 1em 3em;
+
         main {
             #About_box {
                 display: block;
@@ -182,7 +214,7 @@ body {
                 #About_box_right {
                     padding: 0;
                 }
-            }    
+            } 
         }
     }
 }

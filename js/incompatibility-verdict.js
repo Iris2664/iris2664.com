@@ -2,6 +2,7 @@
 
 const browser = platform.name;
 const version = platform.version;
+const os = platform.os;
 
 if (browser == "Firefox" && version < "117") {
     alert("最新版のFirefoxでないと閲覧できません.");

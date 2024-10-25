@@ -26,4 +26,3 @@ npm run dev
 ```sh
 npm run build
 ```
->>>>>>> 1431872 (Vue)

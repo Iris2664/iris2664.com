@@ -26,5 +26,8 @@ const router = createRouter({
   ]
 })
 
-
-export default router
+export default new Router({
+  mode: 'history',
+  base: '/iris2664.com/',
+  routes
+})

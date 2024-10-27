@@ -26,3 +26,14 @@ npm run dev
 ```sh
 npm run build
 ```
+
+
+## font
+
+Source Code Pro  
+[https://github.com/adobe-fonts/source-code-pro](https://github.com/adobe-fonts/source-code-pro)  
+License [SIL OPEN FONT LICENSE Version 1.1](https://github.com/adobe-fonts/source-code-pro?tab=OFL-1.1-1-ov-file#readme)
+  
+Morisawa BIZ UDGothic  
+[https://github.com/googlefonts/morisawa-biz-ud-gothic](https://github.com/googlefonts/morisawa-biz-ud-gothic)  
+License [SIL OPEN FONT LICENSE Version 1.1](https://github.com/googlefonts/morisawa-biz-ud-gothic?tab=OFL-1.1-1-ov-file)

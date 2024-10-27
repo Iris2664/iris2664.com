@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --base=/iris2664.com/",
     "preview": "vite preview"
   },
   "dependencies": {

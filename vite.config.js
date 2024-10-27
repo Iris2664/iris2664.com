@@ -5,13 +5,12 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/iris2664.com',
   plugins: [
     vue(),
   ],
-  base: "/",
-  resolve: {
-    alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
-    }
-  }
+  // ...その他記述
+  build: {
+    outDir: 'docs',
+  },
 })

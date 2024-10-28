@@ -7,20 +7,37 @@ interface Props {
 }
 
 const { title } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, 'https://www.iris2664.com/');
+const ogpImageURL = new URL('/icon1.png', canonicalURL);
 ---
 
 <!doctype html>
 <html lang="ja">
-	<head>
+	<head prefix="og: https://ogp.me/ns#">
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" href="/icon1.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=BIZ+UDGothic:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="author" content="陽向あやめ">
+		<meta name="description" content="陽向あやめ. Bachelor Students (Information), Security Researcher, ICT Engineer, Virtual YouTuber">
+		<meta property="og:title" content="iris2664.com">
+		<meta property="og:description" content="陽向あやめ. Bachelor Students (Information), Security Researcher, ICT Engineer, Virtual YouTuber">
+		<meta property="og:url" content="https://www.iris2664.com/">
+		<meta property="og:image" content="{ogpImageURL}">
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="iris2664.com">
+		<!-- X(Twitter) -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@Iris2664">
+		<meta name="twitter:title" content="iris2664.com">
+		<meta name="twitter:description" content="陽向あやめ. Bachelor Students (Information), Security Researcher, ICT Engineer, Virtual YouTuber">
+		<meta name="twitter:image" content="{ogpImageURL}">
 	</head>
 	<body>
 		<div class="wrapper">

@@ -7,9 +7,6 @@ interface Props {
 }
 
 const { title } = Astro.props;
-
-const canonicalURL = new URL(Astro.url.pathname, 'https://www.iris2664.com/');
-const ogpImageURL = new URL('/icon1.png', canonicalURL);
 ---
 
 <!doctype html>
@@ -29,7 +26,7 @@ const ogpImageURL = new URL('/icon1.png', canonicalURL);
 		<meta property="og:title" content="iris2664.com">
 		<meta property="og:description" content="陽向あやめ. Bachelor Students (Information), Security Researcher, ICT Engineer, Virtual YouTuber">
 		<meta property="og:url" content="https://www.iris2664.com/">
-		<meta property="og:image" content="{ogpImageURL}">
+		<meta property="og:image" content="https://www.iris2664.com/icon1.png">
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="iris2664.com">
 		<!-- X(Twitter) -->
@@ -37,7 +34,7 @@ const ogpImageURL = new URL('/icon1.png', canonicalURL);
 		<meta name="twitter:site" content="@Iris2664">
 		<meta name="twitter:title" content="iris2664.com">
 		<meta name="twitter:description" content="陽向あやめ. Bachelor Students (Information), Security Researcher, ICT Engineer, Virtual YouTuber">
-		<meta name="twitter:image" content="{ogpImageURL}">
+		<meta name="twitter:image" content="https://www.iris2664.com/icon1.png">
 	</head>
 	<body>
 		<div class="wrapper">

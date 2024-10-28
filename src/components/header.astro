@@ -1,0 +1,114 @@
+---
+interface Props {
+    title: string;
+    body: string;
+    href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<header>
+    <nav>
+        <div class="nav-children">
+            <img
+                src="/icon1.png"
+                alt="Icon"
+                width="auto"
+                height="auto"
+                loading="lazy"
+            />
+            <h1>Iris2664.com</h1>
+        </div>
+        <div class="nav-children2">
+            <div class="link">
+                <a href="/">Home</a>
+            </div>
+            <div class="link">
+                <a href="/About">About</a>
+            </div>
+            <div class="link">
+                <a href="/Activities">Activities</a>
+            </div>
+            <div class="link">
+                <a
+                    href="https://iris2664.hatenablog.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer">Blog</a
+                >
+            </div>
+        </div>
+    </nav>
+</header>
+
+<style>
+    header {
+        border-bottom: 1px solid #f2f2f2;
+        margin-bottom: 1em;
+        padding: 2em 2em 1em;
+    }
+
+    header img {
+        width: 60px;
+        height: 60px;
+        padding: 0.3em;
+    }
+
+    header h1 {
+        font-size: 2em;
+        margin: 0.5em 0.5em;
+        font-weight: 400;
+    }
+
+    header .nav-children {
+        display: flex;
+        align-items: center;
+    }
+
+    header .link {
+        padding: 0.9em 0.6em;
+        font-size: 1.2em;
+    }
+
+    header a {
+        color: #5c5c5c;
+        text-decoration: none;
+        padding: 0.6em;
+    }
+
+    header a:hover {
+        background-color: #c0c0c0;
+        border-radius: 5px;
+        color: #181111;
+        padding: 0.6em;
+    }
+
+    @media screen and (min-width: 769px) {
+        header nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        header .nav-children2 {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        header .link {
+            padding: 0.5em 0;
+            font-size: 1.2em;
+        }
+
+        header .nav-children2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        header .nav-children2 div {
+            width: 50%;
+        }
+    }
+</style>

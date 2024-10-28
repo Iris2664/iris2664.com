@@ -1,0 +1,46 @@
+---
+interface Props {
+    title: string;
+    body: string;
+    href: string;
+}
+
+const { href, title, body } = Astro.props;
+---
+
+<footer>
+    <p>Copyright &copy; 2024 陽向あやめ (Iris2664)</p>
+    <p>
+        Hosted on GitHub Pages. Source:
+        <a
+            href="https://github.com/Iris2664/iris2664.com"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            Iris2664/iris2664.com
+        </a>
+    </p>
+    <p>Site revision: 2ea94670941e11efa828bdfd33e0a372</p>
+    <p>本サイトの閲覧には, 最新版のFirefox, Chrome, Safariが必要です.</p>
+</footer>
+
+<style>
+    footer {
+        background-color: #fdfdfd;
+        border-top: 1px solid #cdd7d8;
+        margin: 2em 0;
+        padding: 2em 3em;
+        text-align: right;
+    }
+
+    footer a {
+        color: #9b5b63;
+    }
+
+    footer p {
+        color: #777;
+        font-size: 14px;
+        margin: 0;
+        padding: 0.2em;
+    }
+</style>

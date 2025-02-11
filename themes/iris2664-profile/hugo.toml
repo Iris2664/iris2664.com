@@ -1,0 +1,33 @@
+baseURL = 'https://example.org/'
+languageCode = 'ja'
+title = 'iris2664.com'
+
+[[menus.main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[menus.main]]
+name = 'Posts'
+pageRef = '/posts'
+weight = 20
+
+[[menus.main]]
+name = 'About'
+pageRef = '/about'
+weight = 30
+
+[[menus.main]]
+name = 'About'
+pageRef = '/activities'
+weight = 40
+
+[[menus.main]]
+name = 'Tags'
+pageRef = '/tags'
+weight = 50
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.116.0"

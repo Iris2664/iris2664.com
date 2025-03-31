@@ -119,16 +119,22 @@ header {
     }
   
     .text-box {
-      background-color: #fdfeff;
+      background-color: #fdfdfd;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       color: #333;
       display: flex;
       margin: .5em 0;
       padding: 1.5em;
+
+      h3 {
+        font-size: 1.2em;
+        margin: .2em 0;
+      }
     }
   
     .text-box .left {
       text-align: center;
+      align-content: center;
       margin: 0;
       padding: 0 .5em;
       flex: 1;
@@ -144,10 +150,18 @@ header {
       padding: 0 1.5em;
       flex: 3;
 
-      h2, h3, h5 {
-        margin: 0;
-        padding: 0;
+      h3 {
+        border-bottom: solid 3px #27acd9;
+        font-size: 1.15em;
+        padding: 6px 0;
+      }
 
+      ul {
+        margin-left: 1.5em;
+      }
+
+      .about_link {
+        text-align: right;
       }
     }  
   }
@@ -216,6 +230,16 @@ header {
       color: #bd4147;
       padding: .3em;
       width: fit-content;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper{
+    .home {
+      .text-box {
+        display: block;
+      }
     }
   }
 }

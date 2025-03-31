@@ -117,60 +117,48 @@ header {
       overflow-wrap: break-word;
       line-height: 1.6;
     }
-
-    .balloon-009 {
-      display: flex;
-      gap: 0 0.5em;
-    }
-  
-    .balloon-009 img {
-      max-width: 70px;
-      height: 100%;
-      border: 3px solid #bfe0e0;
-      border-radius: 50%;
-      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    }
-  
-    .balloon-009 .p {
-      position: relative;
-      max-width: 1000px;
-      margin: 3px 0 0;
-      padding: 0.8em 1em;
-      border-radius: 5px;
-      background-color: #f5f5f5;
-      color: #333333;
-      box-shadow:
-        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    }
-  
-    .balloon-009 .p::before {
-      position: absolute;
-      left: -15px;
-      width: 15px;
-      height: 30px;
-      background-color: #f5f5f5;
-      clip-path: polygon(0 50%, 100% 0, 100% 100%);
-      content: "";
-      box-shadow:
-        rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-        rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-    }
   
     .text-box {
-      background-color: #2a3449;
+      background-color: #fdfdfd;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      color: #f8f8f8;
-      margin: 1em 0;
-      padding: 1em 1.5em;
+      color: #333;
+      display: flex;
+      margin: .5em 0;
+      padding: 1.5em;
     }
   
     .text-box .left {
-      flex-basis: 9em;
-    }
-  
-    .text-box .right {
+      text-align: center;
+      align-content: center;
+      margin: 0;
+      padding: 0 .5em;
       flex: 1;
+
+      img {
+        max-width: 200px;
+        width: 100%;
+      }
+    }
+
+    .text-box .right {
+      margin: 0;
+      padding: 0 1.5em;
+      flex: 3;
+
+      h3 {
+        border-bottom: solid 3px #27acd9;
+        font-size: 1.15em;
+        margin-bottom: .3em;
+        padding: 6px 0;
+      }
+
+      ul {
+        margin-left: 1.5em;
+      }
+
+      .about_link {
+        text-align: right;
+      }
     }  
   }
 
@@ -241,6 +229,17 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper{
+    .home {
+      .text-box {
+        display: block;
+      }
+    }
+  }
+}
+
 
 footer {
   background-color: #fdfdfd;

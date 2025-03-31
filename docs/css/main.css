@@ -125,11 +125,6 @@ header {
       display: flex;
       margin: .5em 0;
       padding: 1.5em;
-
-      h3 {
-        font-size: 1.2em;
-        margin: .2em 0;
-      }
     }
   
     .text-box .left {
@@ -144,7 +139,7 @@ header {
         width: 100%;
       }
     }
-  
+
     .text-box .right {
       margin: 0;
       padding: 0 1.5em;
@@ -153,6 +148,7 @@ header {
       h3 {
         border-bottom: solid 3px #27acd9;
         font-size: 1.15em;
+        margin-bottom: .3em;
         padding: 6px 0;
       }
 
@@ -243,6 +239,7 @@ header {
     }
   }
 }
+
 
 footer {
   background-color: #fdfdfd;

@@ -52,6 +52,7 @@ main .img_icon {
 
 main .boxs {
     background-color: #d6d6d60e;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 3rem 0;
     padding: 2rem;
 }
@@ -82,14 +83,20 @@ main .main_box_right h2 {
     font-size: 1.9rem;
 }
 
-main ul {
-    margin-left: 1.5rem;
+main .boxs h3 {
+    font-size: 1.4rem;
+    padding: .2rem 0;
 }
 
-main ul, li {
+main .boxs ul {
+    margin-left: 1.5rem;
+    padding: .1rem 0;
+}
+
+main .boxs ul, li {
     font-size: 1.2rem;
 }
 
-main p {
+main .boxs p {
     font-size: 1.1rem;
 }

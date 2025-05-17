@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   app: {
     head: {
-      titleTemplate: 'タイトルテスト - %s ページ',
+      titleTemplate: ' %s iris2664.com',
       htmlAttrs: { lang: 'ja' },
       meta: [
         { charset: 'utf-8' },

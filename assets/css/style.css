@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #f5f5f5;
+}
+
+body::before {
+    filter: blur(10px);
+}
+
+.pic-background {
+    background-image: url('~/assets/dots-6297146_1920.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    z-index: 0;
+}
+
+.container::before {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: inherit;
+    filter: blur(10px) brightness(85%);
+    content: '';
+    z-index: -1;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+    padding: 2rem;
+    line-height: 1.8;
+}
+
+main .img_icon {
+    max-width: 14rem;
+    max-height: 14rem;
+    border-radius: 50%;
+}
+
+main .boxs {
+    background-color: #d6d6d60e;
+    margin: 3rem 0;
+    padding: 2rem;
+}
+
+main .main_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 2rem 0;
+}
+
+main .main_box_left {
+    padding: 0 2rem;
+    width: 28%;
+    text-align: center;
+}
+
+main .main_box_left h1 {
+    font-size: 1.8rem;
+}
+
+main .main_box_right {
+    padding: 0 1rem;
+    width: 65%;
+}
+
+main .main_box_right h2 {
+    font-size: 1.9rem;
+}
+
+main ul {
+    margin-left: 1.5rem;
+}
+
+main ul, li {
+    font-size: 1.2rem;
+}
+
+main p {
+    font-size: 1.1rem;
+}

@@ -1,9 +1,11 @@
 <template>
 	<div class="container pic-background ">
 		<P5Background />
+		<Header />
 		<main>
 			<NuxtPage />
-		</main>	
+		</main>
+		<Footer />
 	</div>
 	
 </template>
@@ -16,7 +18,8 @@
 	export default {
 		components: {
 			Header,
-			Footer
+			Footer,
+			P5Background,
 		}
 	};
 </script>

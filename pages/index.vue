@@ -27,6 +27,7 @@
             <h2>Research Interests</h2>
             <ul class="box_ul">
                 <li>Information Law</li>
+                <li>Privacy-Enhancing Technologies</li>
             </ul>
 
         </section>
@@ -156,6 +157,17 @@
                     </ul>
                 </div>
             </div>
+        </section>
+    </div>
+    <div class="boxs">
+        <section>
+            <h2>Contact</h2>
+            <p class="contact">ご連絡はTwitterのDMまたはメールでお願いします. </p>
+            <p class="e-mail">mail@$[THIS_DOMAIN]</p>
+            <p>※ 特定電子メールの送付はお断りします.</p>
+            <p>You can verify me at Keybase.io.</p>
+            <p>PGP public key in preparation…</p>
+            <p>Encrypted messages are most welcome.</p>
         </section>
     </div>
 </template>

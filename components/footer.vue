@@ -7,3 +7,17 @@
         </div>    
     </footer>
 </template>
+
+<style>
+footer {
+    padding: 2rem 1rem;
+    line-height: 1.8;
+}
+
+.footer-box {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    text-align: right;
+}
+</style>

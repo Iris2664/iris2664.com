@@ -13,29 +13,6 @@ body::before {
     filter: blur(10px);
 }
 
-.pic-background {
-    background-image: url('~/assets/dots-6297146_1920.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.container {
-    position: relative;
-    z-index: 0;
-}
-
-.container::before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background: inherit;
-    filter: blur(10px) brightness(85%);
-    content: '';
-    z-index: -1;
-}
-
 main {
     margin: 0 auto;
     max-width: 1300px;
@@ -51,8 +28,8 @@ main .img_icon {
 }
 
 main .boxs {
-    background-color: #d6d6d60e;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    background-color: #080b20c5;
+    box-shadow: rgba(28, 28, 44, 0.541) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     margin: 3rem 0;
     padding: 2rem;
 }
@@ -89,8 +66,11 @@ main .boxs h3 {
 }
 
 main .boxs ul {
-    margin-left: 1.5rem;
     padding: .1rem 0;
+}
+
+main .boxs .box_ul {
+    margin-left: 1.5rem;
 }
 
 main .boxs ul, li {
@@ -100,3 +80,58 @@ main .boxs ul, li {
 main .boxs p {
     font-size: 1.1rem;
 }
+
+.links-container {
+    /* コンテナ自体の最大幅と中央寄せ（必要なければ削除） */
+    margin-left: 0; /* ★左寄せにするためにマージンを調整 */
+    margin-right: auto; /* ★右マージンを自動に */
+    padding: 0 0 0 20px; /* コンテナ内の左右の余白 */
+    box-sizing: border-box; /* paddingが幅に含まれるように */
+  }
+  
+  .links-wrapper ul {
+    display: grid; /* Gridを有効にする */
+    /* ★2列の配置設定。auto-fit と minmax でレスポンシブに対応 */
+    /* ここで 1fr を使うことで、それぞれの列が均等に広がる */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    
+    /* ★行間のギャップと列間のギャップを調整 */
+    /* 縦方向のギャップを小さくする（行間の幅を狭くする） */
+    gap: 8px 40px; /* 縦方向のギャップ: 8px, 横方向のギャップ: 40px */
+    
+    padding: 0; /* デフォルトのパディングをなくす */
+    margin: 0; /* デフォルトのマージンをなくす */
+  
+    /* ★Gridアイテム全体を左寄せにする設定 (Gridコンテナに対して) */
+    /* grid-template-columns の設定によりアイテムは自動的に列に配置されますが、 */
+    /* ページの全体を左寄せにしたい場合、.links-container の margin-left: 0; と組み合わせる */
+  }
+  
+  .links-wrapper li {
+    /* 各リストアイテム（行）の下マージンを調整 */
+    /* gap で行間を制御しているので、ここでの margin-bottom は小さくても良い */
+    margin-bottom: 0; /* gapが効くので0にするか、さらに調整 */
+    line-height: 1.2; /* 行の高さを調整して文字間の縦幅を詰める */
+  }
+
+  /* リンクのデフォルト色 */
+ul li a {
+    color: #66B2FF; /* ★例: 明るい青 */
+    text-decoration: none; /* 下線をなくす場合は追加 */
+  }
+  
+  /* リンクにマウスが乗った時の色（ホバー時） */
+ul li a:hover {
+    color: #00FFFF; /* ★例: ホバー時にシアンに変化 */
+    text-decoration: underline; /* ホバー時に下線を出す場合は追加 */
+  }
+  
+  /* 既にアクセスしたリンクの色（visited時） */
+ul li a:visited {
+    color: #99CCFF; /* ★例: 訪問済みのリンクは少しだけ暗めの青に */
+  }
+  
+  /* リンクをクリック中の色（アクティブ時） */
+ul li a:active {
+    color: #FFD700; /* ★例: クリック中に黄色に変化 */
+  }

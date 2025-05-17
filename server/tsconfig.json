@@ -1,3 +1,8 @@
 {
-  "extends": "../.nuxt/tsconfig.server.json"
+  "extends": "./.nuxt/tsconfig.json", // Nuxt 3 のデフォルトのクライアント/共有設定を継承
+  "compilerOptions": {
+    "types": ["node"], // ここに 'node' を追加
+    "moduleResolution": "bundler", // または "node", "esnext" など
+    "module": "esnext" // または "es2020", "node16", "nodenext" など
+  }
 }

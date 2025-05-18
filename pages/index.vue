@@ -1,13 +1,22 @@
 <template>
     <div class="main_box boxs">
         <div class="main_box_left">
-            <img class="img_icon" src="~/assets/img-icon.webp" alt="iris2664 Icon" loading="lazy">
+            <img class="img_icon" src="~/assets/image/img-icon.webp" alt="iris2664 Icon" loading="lazy">
             <h1>Hinata Ayame</h1>
             <p class="id">@iris2664</p>
         </div>
         <div class="main_box_right">
             <h2>Welcome to Iris2664.com!</h2>
-            <p>千葉県生まれ．ハンドルは陽向あやめ．</p>
+            <p>千葉県生まれ. ハンドルは陽向あやめ. ひなあやというあだ名で呼ばれることもある. </p>
+            <p>2024年8月26日からVirtual YouTuberとして活動を開始. </p>
+            <p>高校時代は競技プログラミングに取り組んでいた. 現在は低レイヤプログラミングにも興味がある. </p>
+            <p>サイバーセキュリティや情報法に興味があり，特に個人情報保護やプライバシー法制に関心を持っている. </p>
+            <h3>私が人生で取り組んでいきたいこと</h3>
+            <ul class="box_ul">
+                <li>性別や年齢，地域等に関わらず，一人ひとりの状況やニーズによった誰もが公平に恩恵を受けられる情報通信社会基盤の構築整備に寄与すること. </li>
+                <li>安心安全な通信基盤，オペレーティングシステム，ソフトウエア等の開発に協力や開発に携わること. </li>
+                <li>理工学分野における女性の活躍しやすい環境の整備を推進すること. </li>
+            </ul>
         </div>
     </div>
     <div class="boxs">

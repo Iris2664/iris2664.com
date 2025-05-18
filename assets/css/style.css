@@ -86,7 +86,7 @@ main .boxs .box_ul {
 }
 
 main .boxs ul, li {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 main .boxs p {
@@ -94,58 +94,41 @@ main .boxs p {
 }
 
 .links-container {
-    /* コンテナ自体の最大幅と中央寄せ（必要なければ削除） */
-    margin-left: 0; /* ★左寄せにするためにマージンを調整 */
-    margin-right: auto; /* ★右マージンを自動に */
-    padding: 0 0 0 20px; /* コンテナ内の左右の余白 */
-    box-sizing: border-box; /* paddingが幅に含まれるように */
+    margin-left: 0;
+    margin-right: auto; 
+    padding: 0 0 0 20px; 
+    box-sizing: border-box;
   }
   
   .links-wrapper ul {
-    display: grid; /* Gridを有効にする */
-    /* ★2列の配置設定。auto-fit と minmax でレスポンシブに対応 */
-    /* ここで 1fr を使うことで、それぞれの列が均等に広がる */
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    
-    /* ★行間のギャップと列間のギャップを調整 */
-    /* 縦方向のギャップを小さくする（行間の幅を狭くする） */
-    gap: 8px 40px; /* 縦方向のギャップ: 8px, 横方向のギャップ: 40px */
-    
-    padding: 0; /* デフォルトのパディングをなくす */
-    margin: 0; /* デフォルトのマージンをなくす */
-  
-    /* ★Gridアイテム全体を左寄せにする設定 (Gridコンテナに対して) */
-    /* grid-template-columns の設定によりアイテムは自動的に列に配置されますが、 */
-    /* ページの全体を左寄せにしたい場合、.links-container の margin-left: 0; と組み合わせる */
+    gap: 8px 40px;
+    padding: 0;
+    margin: 0;
   }
   
   .links-wrapper li {
-    /* 各リストアイテム（行）の下マージンを調整 */
-    /* gap で行間を制御しているので、ここでの margin-bottom は小さくても良い */
-    margin-bottom: 0; /* gapが効くので0にするか、さらに調整 */
-    line-height: 1.2; /* 行の高さを調整して文字間の縦幅を詰める */
+    margin-bottom: 0; 
+    line-height: 1.2; 
   }
 
-  /* リンクのデフォルト色 */
 ul li a {
-    color: #66B2FF; /* ★例: 明るい青 */
-    text-decoration: none; /* 下線をなくす場合は追加 */
+    color: #66B2FF;
+    text-decoration: none;
   }
-  
-  /* リンクにマウスが乗った時の色（ホバー時） */
+
 ul li a:hover {
-    color: #00FFFF; /* ★例: ホバー時にシアンに変化 */
-    text-decoration: underline; /* ホバー時に下線を出す場合は追加 */
+    color: #00FFFF;
+    text-decoration: underline;
   }
   
-  /* 既にアクセスしたリンクの色（visited時） */
 ul li a:visited {
-    color: #99CCFF; /* ★例: 訪問済みのリンクは少しだけ暗めの青に */
+    color: #99CCFF; 
   }
   
-  /* リンクをクリック中の色（アクティブ時） */
 ul li a:active {
-    color: #FFD700; /* ★例: クリック中に黄色に変化 */
+    color: #FFD700;
   }
 
 main .contact {

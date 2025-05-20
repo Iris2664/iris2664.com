@@ -1,7 +1,7 @@
 <template>
     <div class="main_box boxs">
         <div class="main_box_left">
-            <img class="img_icon" src="~/assets/image/img-icon.webp" alt="iris2664 Icon" loading="lazy">
+            <img class="img_icon" src="@/assets/image/img-icon.webp" alt="iris2664 Icon" loading="lazy">
             <h1>Hinata Ayame</h1>
             <p class="id">@iris2664</p>
         </div>

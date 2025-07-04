@@ -1,0 +1,86 @@
+.top {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.top .inner {
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: flex;
+}
+
+.top .logo {
+    text-align: center;
+    margin: 2rem;
+}
+
+.top img {
+    max-width: 15rem;
+    max-height: 15rem;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.top .innner_right {
+    margin: 2rem 3rem;
+    line-height: 1.5;
+}
+
+.top .innner_right .links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.top .innner_right .links .box {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    padding-bottom: .2rem;
+}
+
+.top .innner_right .x {
+    width: 16px;
+    height: 16px;
+    margin-right: .5rem;
+}
+
+.top .innner_right .github {
+    width: 18px;
+    height: 18px;
+    margin-right: .5rem;
+    color: #181717;
+}
+
+.top .innner_right a {
+    font-size: 1.15rem;
+    padding-bottom: .1rem;
+}
+
+.top .innner_right .btns {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.top .innner_right .btn_box {
+    margin: .5rem 0;
+}
+
+.top .innner_right .btn {
+    background-color: #039be5;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: .9rem 2rem;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.top .innner_right .btn:hover {
+    background-color: #dcdddd;
+}

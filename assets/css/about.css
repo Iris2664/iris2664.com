@@ -1,0 +1,50 @@
+main {
+    margin: 1rem 0;
+    padding: 2rem 1rem;
+}
+
+.about-container {
+    display: flex;
+}
+
+.left {
+    width: 400px;
+    padding-right: 2rem;
+}
+
+.profile-icon {
+    max-width: 10rem;
+    max-height: 10rem;
+    padding: .3rem 0;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.myname {
+    padding: .8rem 0;
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.myarea {
+    display: flex;
+    align-items: stretch;
+    font-size: 1rem;
+    color: #555;
+    margin: .6rem 0;
+}
+
+.myarea p {
+    margin-top: -.2rem;
+    margin-left: .5rem;
+}
+
+.myarea a {
+    margin-top: -.2rem;
+    margin-left: .5rem;
+}
+
+.myarea svg, .icons {
+    width: 16px;
+    height: 16px;
+}

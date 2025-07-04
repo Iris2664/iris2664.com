@@ -20,9 +20,6 @@ footer {
 }
 
 .footer-box {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1200px;
-    text-align: right;
+align-content: center;
 }
 </style>

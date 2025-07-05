@@ -12,6 +12,11 @@ main {
     padding-right: 2rem;
 }
 
+.left_sticky {
+    position: sticky;
+    top: 1rem;
+}
+
 .profile-icon {
     max-width: 10rem;
     max-height: 10rem;
@@ -47,4 +52,24 @@ main {
 .myarea svg, .icons {
     width: 16px;
     height: 16px;
+}
+
+.right h1, h2, h3, h4, h5 {
+    padding: .5rem 0;
+}
+
+.right ul li {
+    padding: .2rem 0;
+}
+
+.right .e-mail {
+    margin: 1rem 0;
+    padding: .5rem 1rem;
+    background-color: #f8f9fa;
+    color: #bd4147;
+    width: fit-content;
+}
+
+.right ul {
+    margin-left: 1.5rem;
 }

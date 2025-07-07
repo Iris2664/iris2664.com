@@ -7,6 +7,9 @@
                 </div>
                 <div class="innner_right">
                     <h1>陽向あやめ / HINATA Ayame</h1>
+                    <p>
+                        Security Researcher / YouTuber / Programmer
+                    </p>
                     <div class="links">
                         <div class="box">
                             <svg class="x" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -14,7 +17,7 @@
                                 <path
                                     d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                             </svg>
-                            <a href="http://" target="_blank" rel="noopener noreferrer">
+                            <a href="https://x.com/Iris2664" target="_blank" rel="noopener noreferrer">
                                 @Iris2664
                             </a>
                         </div>
@@ -41,10 +44,8 @@
                             </a>
                         </div>    
                     </div>
-                    
-                    <p>Welcome to my personal website.</p>
-                    <p>このサイトは、陽向あやめの個人サイトです。</p>
-                    <p>このサイトは、Nuxt 3とTypeScriptで構築されています。</p>
+                    <p>Welcome to the profile site of HINATA Ayame.</p>
+                    <p>Do not attack this site. There are no flags at all ;)</p>
                 </div>
             </div>
         </div>

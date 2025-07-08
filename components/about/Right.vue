@@ -85,6 +85,19 @@
             </ul>
         </section>
         <section>
+            <h2>Memberships in academic and technical associations</h2>
+            <ul>
+                <li>
+                    情報処理学会<br>
+                    Information Processing Society of Japan
+                </li>
+                <li>
+                    電子情報通信学会<br>
+                    The Institute of Electronics, Information and Communication Engineer
+                </li>
+            </ul>
+        </section>
+        <section>
             <h2>Interests/Expertise</h2>
             <section>
                 <h3>Expertise</h3>

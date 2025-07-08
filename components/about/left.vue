@@ -1,8 +1,8 @@
 <template>
     <div class="left">
-      <div class="left_sticky">
+      <div class="left_sticky box_1">
         <img class="profile-icon" src="@/assets/image/img-icon.webp" alt="Icon">
-        <div>
+        <div class="left_text">
           <h3 class="myname">HINATA Ayame</h3>
           <p>Security Researcher / YouTuber / Programmer</p>
         </div>

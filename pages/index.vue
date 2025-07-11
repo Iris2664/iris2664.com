@@ -52,7 +52,7 @@
     </main>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 definePageMeta({
   layout: false,
 })

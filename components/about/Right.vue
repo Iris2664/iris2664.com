@@ -88,12 +88,16 @@
             <h2>Memberships in academic and technical associations</h2>
             <ul>
                 <li>
-                    情報処理学会<br>
+                    情報処理学会 （学生会員）<br>
                     Information Processing Society of Japan
                 </li>
                 <li>
-                    電子情報通信学会<br>
+                    電子情報通信学会 （学生会員）<br>
                     The Institute of Electronics, Information and Communication Engineer
+                </li>
+                <li>
+                    一般社団法人MyDataJapan （学生会員）<br>
+                    MyData Japan
                 </li>
             </ul>
         </section>
@@ -133,19 +137,15 @@
         <section>
             <h2>Activities</h2>
             <section>
-                <h3>Presentationss</h3>
+                <h3>Publications</h3>
                 <p>準備中</p>
             </section>
             <section>
-                <h3>Publication</h3>
+                <h3>Talks</h3>
                 <p>準備中</p>
             </section>
             <section>
                 <h3>Products</h3>
-                <p>準備中</p>
-            </section>
-            <section>
-                <h3>Academic Papers</h3>
                 <p>準備中</p>
             </section>
             <section>

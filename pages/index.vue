@@ -53,9 +53,43 @@
 </template>
 
 <script setup lang="ts">
+import { useRoute } from 'vue-router';
+
+const route = useRoute();
+
 definePageMeta({
   layout: false,
 })
+
+const siteName: string = 'iris2664.com';
+const pageTitle: string = '陽向あやめのポートフォリオ・プロフィール';
+const pageDescription: string = '陽向あやめのポートフォリオ・プロフィールについて。';
+const pageOgImage: string = 'https://www.iris2664.com/images/ogp-top-page.jpg';
+const currentUrl: string = `https://www.iris2664.com${route.fullPath}`;
+
+useHead({
+  title: pageTitle,
+  meta: [
+    { key: 'description', name: 'description', content: pageDescription }, 
+    // --- OGP設定 ---
+    { key: 'og:site_name', property: 'og:site_name', content: siteName }, 
+    { key: 'og:type', property: 'og:type', content: 'website' }, 
+    { key: 'og:url', property: 'og:url', content: currentUrl }, 
+    { key: 'og:title', property: 'og:title', content: pageTitle }, 
+    { key: 'og:description', property: 'og:description', content: pageDescription }, 
+    { key: 'og:image', property: 'og:image', content: pageOgImage }, 
+    { key: 'og:image:width', property: 'og:image:width', content: '1200' }, 
+    { key: 'og:image:height', property: 'og:image:height', content: '630' }, 
+
+    // --- Twitter Card設定 ---
+    { key: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' }, 
+    { key: 'twitter:site', name: 'twitter:site', content: '@Iris2664' }, 
+    { key: 'twitter:creator', name: 'twitter:creator', content: '@Iris2664' }, 
+    { key: 'twitter:title', name: 'twitter:title', content: pageTitle }, 
+    { key: 'twitter:description', name: 'twitter:description', content: pageDescription }, 
+    { key: 'twitter:image', name: 'twitter:image', content: pageOgImage }, 
+  ]
+});
 </script>
 
 <style>

@@ -84,3 +84,37 @@
 .top .innner_right .btn:hover {
     background-color: #dcdddd;
 }
+
+@media (max-width: 768px) {
+    .top{
+        text-align: center;
+    }
+
+    .top .innner_right .links {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .top .inner {
+        margin: 3rem 2rem;
+        padding: 0;
+        display: block;
+        box-shadow: none;
+    }
+
+    .top .innner_right .btns {
+        justify-content: space-between;
+        margin: 0;
+        padding: 0;
+    }
+
+    .top .innner_right .btn_box {
+        margin: 2rem 0;
+        padding: 0;
+    }
+}
+@media (max-width: 600px) {
+    .top .innner_right .btns {
+        display: block;
+    }
+}

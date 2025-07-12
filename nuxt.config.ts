@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-05-15',
   devtools: { enabled: true },
   app: {
+    baseURL: '/',
     head: {
       titleTemplate: ' %s iris2664.com',
       htmlAttrs: { lang: 'ja' },

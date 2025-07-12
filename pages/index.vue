@@ -64,7 +64,7 @@ definePageMeta({
 const siteName: string = 'iris2664.com';
 const pageTitle: string = '陽向あやめのポートフォリオ・プロフィール';
 const pageDescription: string = '陽向あやめのポートフォリオ・プロフィールについて。';
-const pageOgImage: string = 'https://www.iris2664.com/images/ogp-top-page.png';
+const pageOgImage: string = 'https://www.iris2664.com/ogp-top-page.png';
 const currentUrl: string = `https://www.iris2664.com${route.fullPath}`;
 
 useHead({
